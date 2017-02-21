@@ -1,0 +1,45 @@
+<head>
+<meta charset="UTF-8">
+    <title>Typed.js - Type your heart out</title>
+    <!-- Get jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script>
+    $<script src="jquery.js"></script>
+<script src="typed.js"></script>
+<script>
+    $(function(){
+
+        $("#typed").typed({
+            strings: ["<b>^200moderating my guild^1000</b>", "<b>^200listening to music^1000</b>", "<b>^200YouTube search^750</b>", "<b>^200welcoming users to my guild...^1000</b>"],
+            typeSpeed: 20,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+
+    <link href="main.css" rel="stylesheet"/>
+
+    </head>
+            <div class="tagline">
+            <center><div class="want-to"><center>I need a bot for</center>
+            <div class="tagline-change"><span id="typed" style="white-space:pre;"></span></div>
+            <center>there's a bot for that!</center>
+            </div>
+                
